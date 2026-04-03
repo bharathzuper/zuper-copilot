@@ -1,0 +1,41 @@
+/* Gemini-style circle selection pulse */
+.gemini-pulse {
+  animation: geminiPulse 2s ease-in-out infinite;
+}
+
+@keyframes geminiPulse {
+  0%, 100% { opacity: 0.12; }
+  50% { opacity: 0.22; }
+}
+
+.copilot-crosshair {
+  cursor: crosshair !important;
+}
+
+.copilot-crosshair * {
+  cursor: crosshair !important;
+}
+
+.selection-canvas canvas {
+  cursor: crosshair !important;
+}
+
+.typewriter-cursor::after {
+  content: '▊';
+  animation: blink 0.8s step-end infinite;
+  color: rgba(42, 41, 46, 0.5);
+  margin-left: 1px;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.wave-speaking {
+  animation: wavePulse 1.5s ease-in-out infinite;
+}
+
+@keyframes wavePulse {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.3); }
+}
